@@ -1,0 +1,6 @@
+<div class="search">
+  <input type="text" placeholder="Search by name" [(ngModel)]="searchText" (input)="filterCards()">
+</div>
+<div class="grid">
+  <app-card *ngFor="let card of filteredCards" [imageUrl]="card.imageUrl" [name]="card.name" [description]="card.description"></app-card>
+</div>

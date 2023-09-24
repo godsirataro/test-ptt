@@ -1,0 +1,20 @@
+<div>
+  <h2>Product Information</h2>
+  <form>
+    <div>
+      <label for="productName">Product Image:</label>
+      <input type="text" id="productName" [(ngModel)]="data.imageUrl" name="productImage" required>
+    </div>
+    <div>
+      <label for="productName">Product Name:</label>
+      <input type="text" id="productName" [(ngModel)]="data.name" name="productName" required>
+    </div>
+    <div>
+      <label for="productDescription">Product Description:</label>
+      <textarea id="productDescription" [(ngModel)]="data.description" name="productDescription" required></textarea>
+    </div>
+    <div>
+      <button (click)="saveData()">Save</button>
+    </div>
+  </form>
+</div>
